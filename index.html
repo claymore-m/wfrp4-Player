@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Les Ombres de l'Empire — Bande originale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="plaque">
+
+    <div class="plaque-emblems">
+        <span class="emblem skull">☠</span>
+        <span class="emblem raven">🐦</span>
+        <span class="emblem hammer">⚒</span>
+        <span class="emblem raven">🐦</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <h1 class="album-title">LES OMBRES DE L'EMPIRE</h1>
+    <p class="album-subtitle">Bande originale officielle</p>
+
+    <div class="divider"></div>
+
+    <div class="track-info">
+        <span class="note">♫</span>
+        <span id="track-title" class="track-title">Chargement...</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="controls">
+        <button id="btn-prev" class="ctrl-btn" title="Morceau précédent">◄◄</button>
+        <button id="btn-play" class="ctrl-btn ctrl-btn-main" title="Lecture / Pause">▶</button>
+        <button id="btn-next" class="ctrl-btn" title="Morceau suivant">►►</button>
+    </div>
+
+    <div class="progress-row">
+        <span id="time-current">00:00</span>
+        <div id="progress-bar" class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <span id="time-duration">00:00</span>
+    </div>
+
+    <div class="volume-row">
+        <span class="volume-icon">🔊</span>
+        <input id="volume-slider" type="range" min="0" max="100" value="80">
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="playlist" id="playlist"></div>
+
+</div>
+
+<audio id="audio-player"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
