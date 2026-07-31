@@ -140,3 +140,6 @@ audio.volume = volumeSlider.value / 100;
 
 buildPlaylist();
 loadTrack(0, false);
+
+buildPlaylist();
+loadTrack(0, false);
