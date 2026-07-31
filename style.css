@@ -17,13 +17,17 @@ html, body {
     margin: 20px auto;
     padding: 30px 32px 24px;
     background:
-        radial-gradient(circle at 20% 15%, rgba(255,235,190,0.12) 0%, transparent 3%),
-        radial-gradient(circle at 65% 40%, rgba(255,235,190,0.08) 0%, transparent 2.5%),
-        radial-gradient(circle at 35% 70%, rgba(0,0,0,0.25) 0%, transparent 3%),
-        radial-gradient(circle at 80% 85%, rgba(255,235,190,0.10) 0%, transparent 2%),
-        radial-gradient(circle at 10% 55%, rgba(0,0,0,0.2) 0%, transparent 2.5%),
+        repeating-linear-gradient(115deg,
+            rgba(255,235,190,0.05) 0px,
+            rgba(255,235,190,0.05) 1px,
+            transparent 1px,
+            transparent 4px),
+        repeating-linear-gradient(25deg,
+            rgba(0,0,0,0.06) 0px,
+            rgba(0,0,0,0.06) 1px,
+            transparent 1px,
+            transparent 5px),
         linear-gradient(155deg, #8a6a3a 0%, #5f4522 28%, #3d2c14 55%, #6b4f26 78%, #8a6a3a 100%);
-    background-size: 40px 40px, 55px 55px, 45px 45px, 60px 60px, 50px 50px, 100% 100%;
     border-radius: 4px;
     border: 1px solid #d9b876;
     box-shadow:
@@ -40,30 +44,33 @@ html, body {
 
 .corner {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    background: radial-gradient(circle at 35% 30%, #f5e2b8, #6b4f26 60%, #2a1d0d 100%);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.7), inset 0 1px 1px rgba(255,240,200,0.5);
+    background: radial-gradient(circle at 32% 28%, #fdf0cc 0%, #c8a45e 30%, #6b4f26 65%, #2a1d0d 100%);
+    box-shadow:
+        0 2px 3px rgba(0,0,0,0.75),
+        inset 0 1px 1px rgba(255,250,220,0.7),
+        inset 0 -2px 2px rgba(0,0,0,0.5);
     z-index: 2;
 }
 
-.corner-tl { top: 10px; left: 10px; }
-.corner-tr { top: 10px; right: 10px; }
-.corner-bl { bottom: 10px; left: 10px; }
-.corner-br { bottom: 10px; right: 10px; }
+.corner-tl { top: 11px; left: 11px; }
+.corner-tr { top: 11px; right: 11px; }
+.corner-bl { bottom: 11px; left: 11px; }
+.corner-br { bottom: 11px; right: 11px; }
 
 .plaque-emblems {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 22px;
+    gap: 26px;
     margin-bottom: 6px;
 }
 
 .emblem {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     color: #e8cc8e;
     filter:
         drop-shadow(0 1px 0 rgba(255,240,200,0.35))
@@ -71,8 +78,13 @@ html, body {
 }
 
 .emblem.skull {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+}
+
+.emblem.comet {
+    width: 24px;
+    height: 24px;
 }
 
 .divider {
