@@ -294,3 +294,97 @@ html, body {
     background: #8a6a3a;
     border-radius: 3px;
 }
+
+/* ===========================
+   HEADER IMPÉRIAL WFRP
+=========================== */
+
+.imperial-header{
+display:grid;
+grid-template-columns:90px 1fr 90px;
+align-items:center;
+margin-bottom:18px;
+}
+
+.wing{
+font-size:46px;
+color:#d8b46e;
+filter:drop-shadow(0 2px 3px #000);
+opacity:.95;
+}
+
+.center-crest{
+text-align:center;
+}
+
+.sigmar{
+font-size:34px;
+margin-bottom:8px;
+color:#f2d39b;
+text-shadow:
+0 0 4px rgba(255,230,180,.25),
+0 2px 2px #000;
+}
+
+.center-crest h1{
+
+font-family:"Pirata One",serif;
+font-size:38px;
+letter-spacing:3px;
+margin:0;
+
+background:linear-gradient(#fff2c8,#e0b86b,#9d6d2e);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+text-shadow:none;
+
+}
+
+.subtitle{
+
+margin-top:6px;
+
+font-size:11px;
+
+letter-spacing:4px;
+
+color:#ccb07b;
+
+text-transform:uppercase;
+
+}
+
+.ornament{
+
+height:18px;
+
+margin:18px auto;
+
+width:82%;
+
+background:
+linear-gradient(to right,
+
+transparent,
+
+#a5793b 10%,
+
+#f3d99f 50%,
+
+#a5793b 90%,
+
+transparent);
+
+mask:
+radial-gradient(circle at center,#000 4px,transparent 5px),
+linear-gradient(#000,#000);
+
+-webkit-mask:
+radial-gradient(circle at center,#000 4px,transparent 5px),
+linear-gradient(#000,#000);
+
+opacity:.8;
+
+}
